@@ -169,7 +169,7 @@ footer .logo {
 }
 
 .content{
-    width: 450px;
+    width: 500px;
     padding-top: 30vh;
     padding-left: 4rem;
 }
@@ -186,7 +186,7 @@ footer .logo {
     color: white;
     gap: 10px;
     text-decoration: none;
-    width: 160px;
+    width: 180px;
     position: relative;
     overflow: hidden;
     margin-top: 0.5rem;
@@ -294,16 +294,15 @@ footer .logo {
     footer{
         padding: 0.2rem 1rem;
     }
-
     .content{
         padding-left: 1rem;
-        width: 400px;
+        width: 320px;
     }
     .homepage-content{
         margin: 2rem 1rem;
 
     }
-    /* .button{
+    .button{
         width: 160px;
-    } */
+    }
 }
