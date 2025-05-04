@@ -181,7 +181,7 @@ footer .logo {
     color: var(--font-main-color);
 }
 
-@media screen and (max-width:891px){
+@media screen and (max-width:850px){
     footer{
         flex-direction: column;
         align-items: flex-start;
@@ -229,7 +229,7 @@ footer .logo {
     color: white;
     gap: 10px;
     text-decoration: none;
-    width: 180px;
+    width: 190px;
     position: relative;
     overflow: hidden;
     margin-top: 0.5rem;
@@ -347,4 +347,95 @@ footer .logo {
     .button{
         width: 160px;
     }
+}
+
+/* BIOGRAPHY AND LEGACY PAGE STYLING */
+
+.biography, .legacy{
+    margin: 2rem 4rem;
+
+}
+
+.biography a{
+    color: var(--header-color)
+}
+
+.biography img, #banner{
+    padding-bottom: 2rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container{ 
+    display: flex;
+    gap: 3rem;
+
+}
+
+.column{
+    flex: 1;
+}
+
+/* FOR THE IMAGES - CODE SOURCED FROM CHATGPT / initially 2 images were flex but switched to grid */
+
+.image-container {
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 827px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 522px){
+    .biography, .legacy{
+        margin: 2rem 1.5rem;
+    }
+
+    .biography img, .legacy img{
+        padding-bottom: 1rem;
+    }
+
+    .container{
+        gap: 1rem
+    }
+
+    /* .column{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .image-container {
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+
+    #bank {
+        transform: rotate(90deg);
+        transform-origin: center center;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 50vh;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+
 }
