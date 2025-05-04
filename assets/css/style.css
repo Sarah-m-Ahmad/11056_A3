@@ -6,24 +6,24 @@
     --header-color: #4F833A;
     --footer-color:#F5C48E;
 }
+/* Set main colors as variables to reference throughout. Although set and not intended to change, easier to recall */
 
 *{
     font-size: 16px;
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /* Includes elements padding and borders in the width and height */
 }
 
-/* body {
-    margin: 0;
-} */
 
 /*Body text*/
 
 p,a {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: clamp(1rem, 2.5vw, 1.2rem); 
+    /* Dynamic font for responsivity */
     font-weight: 300;
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -56,6 +56,8 @@ h3{
 h4{
     font-size: clamp(1.5rem, 3vw, 2rem);
 }
+
+/* ^ Responsive typography for headings */
 
 /* HEADER STYLING */
 
@@ -101,10 +103,10 @@ nav ul {
 }
 
 /* Responsive hamburger icon sourced from: https://www.youtube.com/watch?v=flItyHiDm7E&ab_channel=Coding2GO */
+/* Added comments to explain */
 
 .hamburger{
     display: none;
-    cursor: pointer;
 }
 
 .bar{
@@ -137,7 +139,6 @@ nav ul {
         flex-direction: column;
         background-color: var(--header-color);
         width: 100%;
-        /* transition: 0.3s; */
         z-index: 1000;
     }
 
@@ -146,10 +147,12 @@ nav ul {
     }
 
     .nav-menu.active{
-        top: 10%;
+        top: 8%;
         left: 0;
 
     }
+    /* Modified initial code to slide in from the top instead of the left, added JS from chatgpt to hide when user scrolls down to hide this */
+
 }
 
 /* FOOTER STYLING */
@@ -185,6 +188,7 @@ footer .logo {
     color: var(--font-main-color);
 }
 
+/* Collapses footer */
 @media screen and (max-width:850px){
     footer{
         flex-direction: column;
@@ -264,6 +268,7 @@ footer .logo {
 .button:hover .arrow-hover{
     opacity: 1;
 }
+/* As there are two images, had to position them on top of each other and hide depending on state */
 
 /* HOMEPAGE CONTENT */
 
@@ -282,6 +287,7 @@ footer .logo {
 
 }
 
+/* Assigning grid areas for images */
 #des{
     grid-row: 1/2;
     grid-column: 3/4;
@@ -455,6 +461,8 @@ footer .logo {
 }
 
 /* CAROUSEL - BASE CODE COURTESY OF:https://www.youtube.com/shorts/W2yJ_IbkAyI */
+/* Modified styling and such */
+
 .key-works-content{
     width: 80vw;
     margin: 1rem 4rem;
